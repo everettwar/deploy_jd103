@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "everettwar-deploy_jd103"
+version = "0.1.0"
+description = "用一组明示的正则规则扫描输入，报告模型部署工程师·GPU 故障与作业自愈相关的命中行与片段"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "everettwar" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://everettwar.github.io"
+Repository = "https://github.com/everettwar/deploy_jd103"
+Issues = "https://github.com/everettwar/deploy_jd103/issues"
+
+[project.scripts]
+deploy_jd103 = "deploy_jd103:main"
+
+[tool.setuptools]
+py-modules = ["deploy_jd103"]
